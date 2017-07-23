@@ -29,7 +29,7 @@ function tre(files = [], opts = {}) {
 
   files = flatten(files)
   const actualFiles = files.filter(item => {
-    return dot || item.type !== 'file' ? true : !/^\.[^.]+$/.test(item.name)
+    return dot ? true : !/^\.[^.]+$/.test(item.name)
   })
 
   return (

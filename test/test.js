@@ -50,3 +50,15 @@ test('nested files and folders', t => {
     ])
   )
 })
+
+test('dot files', t => {
+  const files = [
+    { type: 'folder', name: '.git' },
+    { type: 'file', name: '.gitignore' },
+    { type: 'file', name: 'foo' }
+  ]
+
+  t.snapshot(tre(files), 'ignore dot files and folders')
+
+  t.snapshot(tre(files, { dot: true }), 'include dot files and folders')
+})
