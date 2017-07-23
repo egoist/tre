@@ -32,7 +32,7 @@ tre([
 .
 ├── index.js
 └── lib 
-  └── utils.js
+    └── utils.js
 ```
 
 ## API

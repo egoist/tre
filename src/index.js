@@ -44,8 +44,11 @@ function tre(files = [], opts = {}) {
         const next = actualFiles[index + 1]
         const char =
           next && next.depth === item.depth ? chars.continue : chars.end
-        const childPrefix = item.depth > 0 && !isLast ? chars.line : ''
-        const prefix = `${childPrefix}${repeat(' ', item.depth * 2)}${char}`
+        const linePrefix = item.depth > 0 && !isLast ? chars.line : ''
+        const prefix = `${linePrefix}${repeat(
+          ' ',
+          item.depth === 0 ? 0 : 3 + (item.depth - 1) * 4 + (linePrefix ? 0 : 1)
+        )}${char}`
 
         return `${prefix} ${item.name}`
       })
