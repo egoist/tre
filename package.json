@@ -10,6 +10,14 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "file",
+    "tree",
+    "unix",
+    "cmd",
+    "file-tree",
+    "map"
+  ],
   "scripts": {
     "test": "ava && npm run lint",
     "lint": "xo",
