@@ -6,7 +6,9 @@
     "url": "egoist/tre",
     "type": "git"
   },
-  "main": "dist/tre.js",
+  "main": "dist/tre.common.js",
+  "unpkg": "dist/tre.js",
+  "cdn": "dist/tre.js",
   "files": [
     "dist"
   ],
@@ -22,7 +24,7 @@
     "test": "ava && npm run lint",
     "lint": "xo",
     "prepublish": "npm run build",
-    "build": "bili --format umd --buble.objectAssign assign"
+    "build": "bili --format umd,cjs --buble.objectAssign assign"
   },
   "author": "egoist <0x142857@gmail.com>",
   "license": "MIT",
