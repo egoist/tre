@@ -29,7 +29,6 @@
   "dependencies": {},
   "devDependencies": {
     "ava": "^0.21.0",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-env": "^1.4.0",
     "bili": "^0.17.0",
     "eslint-config-rem": "^3.0.0",
@@ -46,9 +45,6 @@
           "useBuiltIns": true
         }
       ]
-    ],
-    "plugins": [
-      "transform-object-rest-spread"
     ]
   },
   "ava": {
