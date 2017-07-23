@@ -6,9 +6,7 @@
     "url": "egoist/tre",
     "type": "git"
   },
-  "main": "dist/tre.common.js",
-  "unpkg": "dist/tre.js",
-  "cdn": "dist/tre.js",
+  "main": "dist/tre.js",
   "files": [
     "dist"
   ],
@@ -24,13 +22,11 @@
     "test": "ava && npm run lint",
     "lint": "xo",
     "prepublish": "npm run build",
-    "build": "bili --format umd,cjs --buble.objectAssign assign"
+    "build": "bili --format umd"
   },
   "author": "egoist <0x142857@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "nano-assign": "^1.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "ava": "^0.21.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",

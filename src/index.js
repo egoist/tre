@@ -1,6 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-import assign from 'nano-assign'
-
 const CHARS = {
   continue: '├──',
   end: '└──',
@@ -29,7 +26,6 @@ function repeat(char, count) {
 function tre(files = [], opts = {}) {
   const rootName = opts.root || '.'
   const dot = opts.dot
-  const chars = { ...CHARS, ...opts.chars }
 
   files = flatten(files)
   const actualFiles = files.filter(item => {
@@ -43,8 +39,8 @@ function tre(files = [], opts = {}) {
         const isLast = index === actualFiles.length - 1
         const next = actualFiles[index + 1]
         const char =
-          next && next.depth === item.depth ? chars.continue : chars.end
-        const linePrefix = item.depth > 0 && !isLast ? chars.line : ''
+          next && next.depth === item.depth ? CHARS.continue : CHARS.end
+        const linePrefix = item.depth > 0 && !isLast ? CHARS.line : ''
         const prefix = `${linePrefix}${repeat(
           ' ',
           item.depth === 0 ? 0 : 3 + (item.depth - 1) * 4 + (linePrefix ? 0 : 1)

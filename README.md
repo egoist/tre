@@ -58,19 +58,6 @@ Default: `.`
 
 The root folder name which will be shown at the top the generated file tree.
 
-##### chars
-
-Type: `object`<br>
-Default:
-
-```js
-{
-  continue: '├──',
-  end: '└──',
-  line: '│'
-}
-```
-
 ##### dot
 
 Type: `boolean`<br>
