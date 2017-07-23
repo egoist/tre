@@ -71,7 +71,7 @@ Default:
 Type: `boolean`<br>
 Default: `undefined`
 
-Whether to include dot files. Excluding by default.
+Whether to include dot files. Excluded by default.
 
 ## Contributing
 
