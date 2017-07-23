@@ -2,6 +2,11 @@
 
 [![NPM version](https://img.shields.io/npm/v/tre.svg?style=flat)](https://npmjs.com/package/tre) [![NPM downloads](https://img.shields.io/npm/dm/tre.svg?style=flat)](https://npmjs.com/package/tre) [![CircleCI](https://circleci.com/gh/egoist/tre/tree/master.svg?style=shield)](https://circleci.com/gh/egoist/tre/tree/master)  [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/egoist/donate)
 
+To get an output like this:
+
+<img width="201" alt="2017-07-23 11 36 03" src="https://user-images.githubusercontent.com/8784712/28500720-bcb71424-6fff-11e7-8f7a-b696b3842024.png">
+
+
 ## Install
 
 ```bash
