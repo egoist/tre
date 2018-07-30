@@ -39,7 +39,7 @@ function tre(files = [], opts = {}) {
         const isLast = index === actualFiles.length - 1
         const next = actualFiles[index + 1]
         const char =
-          next && next.depth >= item.depth ? CHARS.continue : CHARS.end
+          next && next.depth === item.depth ? CHARS.continue : CHARS.end
         const linePrefix = item.depth > 0 && !isLast ? CHARS.line : ''
         const prefix = `${linePrefix}${repeat(
           ' ',
